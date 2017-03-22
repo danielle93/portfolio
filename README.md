@@ -1,3 +1,3 @@
-# Web 2 Starter
+# Stand Alone Portfolio
 
-Put information about your project here. 
+Create a portfolio using jquery lightbox gallery
