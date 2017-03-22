@@ -118,7 +118,8 @@ main {
 figure {
     outline: solid 1px rgba(255,255,255,.1);
     background: rgba(255,255,255,.06);
-    width: 22%;
+    min-width: 22%;
+    max-width: 310px;
     padding: 2em;
     margin: 1em;
     display: flex;
@@ -179,9 +180,12 @@ MEDIA QUERIES
         font-size: 2.5em;
 
     }
+    
+/*
   figure {
       width: 100%
     }
+*/
 
     
     .logo img {
@@ -234,13 +238,6 @@ MEDIA QUERIES
        background: blue;
     }
 */
-    
-     
-/*    figure {*/
-/*        margin: 0 auto;*/
-/*        margin-bottom: 1em;*/
-/*        width: 28%;*/
-/*    }*/
     
   /*Main Container*/
    main {
