@@ -2,31 +2,183 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
 
-  <title>Web 2 Starter</title>
+  <title>Stand Alone Gallery</title>
  
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- Normalize CSS makes browsers render all elements more consistently -->
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">  
-  <!-- YOUR STYLES GO HERE -->
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
+ 
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">  
+  <link rel="stylesheet" href="css/lg-transitions.min.css">
+  <link rel="stylesheet" href="css/lightgallery.min.css">    
+  
   <link rel="stylesheet" href="css/styles.css">	
 	
 </head>
 <body>
-	
-  <!-- YOUR AWESOME WEBSITE -->
-	<h1>Web 2 Starter</h1>
-
-	
 
 
-  <!-- jQuery -->
+<nav>
+   <span class="name">Darling Danielle</span><a href="#portfolio">View Portfolio</a>
+</nav>
+
+     
+     <section>
+         <div class="logo">
+         <img src="img/logo.png" alt="">
+         </div>
+         
+     </section>
+     
+
+	<main class="gallery" id="portfolio">
+       <h1>Portfolio Albums</h1>
+        
+<!--        My Stuff         -->
+        
+<!--        Stuff 1-->
+
+        <figure>
+         
+         <!--Add Photos of Menus
+             Coaster Mockup-->
+         
+          <a data-sub-html="#poached1" href="img/fullsize/poached/storeSign.jpg">
+            <img class="thumb" src="img/thumbs/poached.jpg" alt="">
+          </a>
+          
+          <a data-sub-html="#poached2" href="img/fullsize/poached/businessCard.jpg">
+          </a>
+          
+          <a data-sub-html="#poached3" href="img/fullsize/poached/punchCard.jpg">
+          </a>
+          
+          <a data-sub-html="#poached4" href="img/fullsize/poached/web.jpg">
+          </a>
+          
+          <a data-sub-html="#poached5" href="img/fullsize/poached/mobile.jpg">
+          </a>
+          <figcaption>Branding &amp; Identity 1</figcaption>
+          
+        </figure>
+        
+<!--        Stuff 2-->
+
+        
+        <figure>         
+         
+          <a data-sub-html="#anchored1" href="img/fullsize/anchoredArt/glassSign.jpg">
+            <img class="thumb" src="img/thumbs/anchoredArt.jpg" alt="">
+          </a>
+          
+          <a data-sub-html="#anchored2" href="img/fullsize/anchoredArt/apptCard.jpg">
+          </a>
+          
+          <a data-sub-html="#anchored3" href="img/fullsize/anchoredArt/businessCard.jpg">
+          </a>
+          
+          <a data-sub-html="#anchored4" href="img/fullsize/anchoredArt/button.jpg">
+          </a>
+          
+          <a data-sub-html="#anchored5" href="img/fullsize/anchoredArt/brandTag.jpg">
+          </a>
+          
+          <a data-sub-html="#anchored6" href="img/fullsize/anchoredArt/storeSign.jpg">
+          </a>
+          
+                <figcaption>Branding &amp; Identity 2</figcaption>
+
+          
+        </figure>
+
+        
+        
+         <!--        Stuff 3-->
+        
+        <figure>
+         
+          <a data-sub-html="#cap-one" href="img/fullsize/artwork/hand_geometry.jpg">
+            <img class="thumb" src="img/thumbs/artwork.jpg" alt="">
+          </a>
+          
+          <a data-sub-html="#cap-two" href="img/fullsize/artwork/lotus_geometry.jpg">
+          </a>
+          
+          <a href="img/fullsize/artwork/wolf-skull-and-roses.jpg">
+          </a>
+          
+          
+          <a data-sub-html="#cap-two" href="img/fullsize/artwork/monroe.jpg">
+          </a>
+          
+          <a href="img/fullsize/artwork/debonair.jpg">
+          </a>
+        
+                 <figcaption>Artwork</figcaption>
+
+        </figure>
+        
+        
+  </main>
+
+	<footer>
+	    <p>&#169; Danielle Roberson 2017</p>
+	</footer>
+
+<!--	Poached Captions    -->
+<div class="caption" id="poached1">
+    <h2>Store Sign</h2>
+</div>
+
+<div class="caption" id="poached2">
+    <h2>Business Card</h2>
+</div>
+
+<div class="caption" id="poached3">
+    <h2>Punch Card</h2>
+</div>
+
+<div class="caption" id="poached4">
+    <h2>Desktop Site Mockup</h2>
+</div>
+
+<div class="caption" id="poached5">
+    <h2>Mobile Site Mockup</h2>
+</div>
+
+<!--	Anchored Art Captions    -->
+<div class="caption" id="anchored1">
+    <h2>Glass Store Sign</h2>
+</div>
+
+<div class="caption" id="anchored2">
+    <h2>Business Card</h2>
+</div>
+
+<div class="caption" id="anchored3">
+    <h2>Business Card Style 2</h2>
+</div>
+
+<div class="caption" id="anchored4">
+    <h2>Metal Button Pin</h2>
+</div>
+
+<div class="caption" id="anchored5">
+    <h2>Clothing Brand Tag</h2>
+</div>
+
+<div class="caption" id="anchored6">
+    <h2>Store Sign</h2>
+</div>
+
+
+
+<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <!-- jQuery Plugin -->
-  <script src="js/plugin.js"></script>
-  <!-- YOUR SCRIPTS GO HERE -->
-  <script src="js/scripts.js"></script>
+  	
+  	<script src="js/lightgallery.min.js"></script>
+  	<script src="js/lg-thumbnail.min.js"></script>
+  	<script src="js/scripts.js"></script>
 
 </body>
 </html>
