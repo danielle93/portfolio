@@ -1,42 +1,262 @@
 /********************
 YOUR STYLES
 *******************/
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
 
 
+html{
+    background-image: url("https://c1.staticflickr.com/3/2633/4081217254_d2e7bf59f3_z.jpg?zz=1");
+	background-position: 0px 0px;
 
+	animation: animatedBackground 40s linear infinite;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 100%; }
+	to { background-position: 0% 0%; }
+}
+
+h1{
+margin-top: .3em;
+    margin-left: 1.5em;
+    margin-bottom: 0;
+    width: 100%;
+     font-family: 'Sacramento', cursive;
+    color: white;
+    font-size: 4em;
+
+}
+
+h2{
+    font-size: 1em;
+}
+/*Navigation*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em;
+    width: 98%;
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #fff;
+    text-decoration: none;
+   margin-right: 1em;
+    transition: color .5s;
+}
+
+nav a:hover{
+    color: plum;
+}
+
+
+.name {
+    padding: .1em;
+    margin-left: .4em;
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+    color: #fff;
+    transition: color .5s;
+}
+
+.name:hover{
+    color: plum;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: 42em;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 100%;
+}
+
+.logo img {
+    z-index: -1;
+    width: 30%;
+    opacity: .15;
+    margin: -2% 35%;
+}
+
+footer p{
+padding: 1em;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: .8em;
+}
+
+/* Gallery Styling */
+
+
+/*just for class*/
+figure img {
+    width: 300px;
+    height: 300px;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(20,0,30,1);
+    padding-bottom: 1em;
+}
+
+figure {
+    outline: solid 1px rgba(255,255,255,.1);
+    background: rgba(255,255,255,.06);
+    width: 22%;
+    padding: 2em;
+    margin: 1em;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+
+figcaption{
+    display: flex;
+margin-top: 1em;
+    width: 100%;    
+    color: white;
+    text-transform:uppercase;
+    justify-content: center;
+}
+
+.lg-backdrop {
+    background: rgba(0,0,0,1);
+}
+
+.lg-image {
+    box-shadow: 0 0 30px #333;
+}
+
+/*Captions*/
+.caption {
+    display: none;
+}
+
+.thumb{
+    transition: filter .5s;
+    transition: transform .3s;
+}
+
+.thumb:hover{
+    transform: scale(1.05);
+}
 
 /********************
 MEDIA QUERIES
-*******************/
+******************
 /* Mobile: 320px = 20em */
 @media screen and (min-width: 20em) { 
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
+  /* Diagnostic Styling. */
+/*
+  body {
        background: yellow;
-       content: "Mobile Size";
   }
+*/
+    
+/*    figure {*/
+/*        width: 100%*/
+/*    }*/
+    
+    .logo img {
+        transform: scale(2);
+        margin-bottom: 80%;
+    }
+    
+    nav a {
+        font-size: 1em;
+    }
+    
+    .name {
+        font-size: 2em;
+        margin-left: -.01em;
+    }
   
 }
 
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
+  /* Diagnostic Styling. */
+/*
+  body {
+       background: green;
   }
+*/
 
+    
+/*    figure {*/
+/*        width: 50%*/
+/*    }*/
+    
+    .logo img {
+        min-width: 40%;
+    z-index: -1;
+    opacity: .15;
+    margin: -25% 30%;
+    position: fixed;
+        transform: scale(.9)
+}
 }
 
 /* Desktop: 1280px = 80em */
-@media screen and (min-width: 80em) { 
+@media screen and (min-width: 90em) { 
   
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
+  /* Diagnostic Styling. */
+/*
+  body {
+       background: blue;
+    }
+*/
+    
+     
+/*    figure {*/
+/*        margin: 0 auto;*/
+/*        margin-bottom: 1em;*/
+/*        width: 28%;*/
+/*    }*/
+    
+  /*Main Container*/
+   main {
+    width: 100%;
+}
+
+    .logo img {
+min-width: 90%;
+    z-index: -1;
+    opacity: .15;
+    margin: -20% 35%;
+    position: fixed;
+        transform: scale(1.3)
+}
+    
+.name {
+    padding: .1em;
+    margin-left: .4em;
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+    color: #fff;
+    transition: color .5s;
+}
 
 }
