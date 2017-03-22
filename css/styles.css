@@ -29,6 +29,7 @@ margin-top: .3em;
 
 h2{
     font-size: 1em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 /*Navigation*/
 
@@ -140,7 +141,7 @@ margin-top: 1em;
 }
 
 .lg-backdrop {
-    background: rgba(0,0,0,1);
+    background: rgba(29, 5, 41, 0.90);
 }
 
 .lg-image {
