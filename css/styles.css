@@ -221,7 +221,7 @@ MEDIA QUERIES
 }
 
 /* Desktop: 1280px = 80em */
-@media screen and (min-width: 100em) { 
+@media screen and (min-width: 90em) { 
   
   /* Diagnostic Styling. */
 /*
